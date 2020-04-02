@@ -52,6 +52,18 @@
             color: $white-color;
         }
     }
+    
+    .footer-link{
+        i{
+            font-size: 16px;
+            position: relative;
+            top: 4px;
+            right: 3px;
+        }
+        [class^="fa"]{
+            top: 2px;
+        }
+    }
 
     .links{
         display: inline-block;
