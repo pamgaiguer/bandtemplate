@@ -4,3 +4,4 @@
 *.scss.map
 ./node_modules
 node_modules
+src/assets/sass/.DS_Store
