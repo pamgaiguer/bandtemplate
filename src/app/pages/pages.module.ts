@@ -19,4 +19,4 @@ import { SignupComponent } from './signup/signup.component';
         ProfileComponent
     ]
 })
-export class ExamplesModule { }
+export class PagesModule { }
