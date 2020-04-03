@@ -7,13 +7,6 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "i18n":{
-        "sourceLocale": "en-US",
-        "locales": {
-          "en": "src/locale/messages.en.xlf",
-          "pt": "src/locale/messages.pt.xlf"
-        }
-      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -56,6 +49,14 @@
               ],
               "serviceWorker": true,
               "ngswConfigPath": "ngsw-config.json"
+            },
+            "pt":{
+              "aot": true,
+              "outputPath": "dist/bandtemplate-pt/",
+              "i18nFile": "src/locale/messages.pt.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "pt",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -67,6 +68,9 @@
           "configurations": {
             "production": {
               "browserTarget": "pk2-angular:build:production"
+            },
+            "pt":{
+              "browserTarget": "pk2-angular:build:pt"
             }
           }
         },
