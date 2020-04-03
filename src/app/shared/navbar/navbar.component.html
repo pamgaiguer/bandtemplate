@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="https://www.creative-tim.com">bandName</a>
+            <a class="navbar-brand" [routerLink]="home">bandName</a>
             <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
@@ -11,25 +11,25 @@
         <div class="navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link" i18n>News</a>
+                    <a href="#" class="nav-link" [routerLink]="" i18n>News</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link" i18n>Media</a>
+                    <a href="#" class="nav-link" [routerLink]="" i18n>Media</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link" i18n>About</a>
+                    <a href="#" class="nav-link" [routerLink]="" i18n>About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link" i18n>Discography</a>
+                    <a href="#" class="nav-link" [routerLink]="" i18n>Discography</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link" i18n>Tour</a>
+                    <a href="#" class="nav-link" [routerLink]="" i18n>Tour</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link" i18n>Store</a>
+                    <a href="#" class="nav-link" [routerLink]="" i18n>Store</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link" i18n>Contact</a>
+                    <a href="#" class="nav-link" [routerLink]="" i18n>Contact</a>
                 </li>
                 <!-- <li class="nav-item" *ngIf="!isDocumentation()">
                     <a href="http://pk2-angular.creative-tim.com/documentation/tutorial" class="nav-link" target="_blank"><i class="nc-icon nc-book-bookmark"></i> Documentation</a>
