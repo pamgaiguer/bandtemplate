@@ -3,7 +3,8 @@
 *.sass.map
 *.scss.map
 ./node_modules
-node_modules
+node_modules/*
 src/assets/sass/.DS_Store
 .DS_Store
 .firebasesrc
+dist/*
