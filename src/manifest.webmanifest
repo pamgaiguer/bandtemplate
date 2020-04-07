@@ -1,7 +1,7 @@
 {
   "name": "pk2-angular",
   "short_name": "pk2-angular",
-  "theme_color": "#1976d2",
+  "theme_color": "#94979f",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
