@@ -6,6 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
     imports: [
@@ -16,7 +17,8 @@ import { SignupComponent } from './signup/signup.component';
     declarations: [
         HomeComponent,
         SignupComponent,
-        ProfileComponent
+        ProfileComponent,
+        NewsComponent
     ]
 })
 export class PagesModule { }

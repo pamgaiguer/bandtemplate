@@ -1,0 +1,35 @@
+<div class="page-header page-header-xs" data-parallax="true" style="background-image: url('./assets/img/daniel-olahh.jpg');">
+    <div class="filter"></div>
+    <div class="container">
+        <div class="motto text-center">
+            <h3 i18n>News</h3>
+        </div>
+    </div>
+</div>
+
+
+<div class="main news">
+    <div class="section ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card-deck">
+                        <div class="card" *ngFor="let news of allnews; index as newsId">
+                            <img class="card-img-top" src="https://dummyimage.com/350x4:3/888888/ffffff.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">{{news.title}}</h5>
+                                <p class="card-text">{{news.description}}</p>
+                            </div>
+                            <div class="card-footer text-right">
+                                <small class="text-muted ">{{news.date}}</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="section section-dark text-center"></div> -->
+    <!-- <div class="section landing-section"></div> -->
+</div>
