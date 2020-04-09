@@ -13,16 +13,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 my-1" *ngFor="let news of allnews; let i = index">
+                    <a [routerLink]="['/news',i]">
                         <div class="card">
                             <img class="card-img-top" src="{{news.img}}" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">{{news.title}}</h5>
-                                <p class="card-text">{{news.description}}</p>
+                                <p class="card-text">{{ (news.description.length > 50) ? (news.description | slice:0:50) + '...' : news.description }}</p>
+                                <!-- <p class="card-text">{{ news.description | dotdotdot:50 }}</p> -->
                             </div>
                             <div class="card-footer text-right">
                                 <small class="text-muted ">{{news.date}}</small>
                             </div>
                         </div>
+                    </a>
                 </div>
             </div>
         </div>

@@ -1,6 +1,10 @@
 .news{
     .card{
         height: 50vh;
+
+        &:hover{
+            cursor: pointer;
+        }
     }
     .card-img-top{
         height: 25vh;

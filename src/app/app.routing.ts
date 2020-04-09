@@ -9,6 +9,7 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NewsComponent } from './pages/news/news.component';
+import { NewsDetailsComponent } from './pages/news-details/news-details.component';
 
 
 const routes: Routes =[
@@ -19,6 +20,7 @@ const routes: Routes =[
     { path: 'nucleoicons',      component: NucleoiconsComponent },
     { path: 'home',          component: HomeComponent },
     { path: 'news',          component: NewsComponent },
+    { path: 'news/:newsId',          component: NewsDetailsComponent },
 ];
 
 @NgModule({

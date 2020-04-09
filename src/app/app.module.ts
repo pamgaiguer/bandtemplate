@@ -9,12 +9,15 @@ import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import localeEn from '@angular/common/locales/En';
 
+import { DotdotdotPipe } from './pipes/dotdotdot.pipe';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
 import { ComponentsModule } from './components/components.module';
 import { PagesModule } from './pages/pages.module';
+
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
@@ -27,6 +30,7 @@ registerLocaleData(localeEn);
     AppComponent,
     NavbarComponent,
     FooterComponent,
+    DotdotdotPipe,
   ],
   imports: [
     BrowserModule,
@@ -36,8 +40,10 @@ registerLocaleData(localeEn);
     ComponentsModule,
     PagesModule,
     AppRoutingModule,
+    
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
+  exports: [DotdotdotPipe],
   providers: [],
   bootstrap: [AppComponent]
 })
