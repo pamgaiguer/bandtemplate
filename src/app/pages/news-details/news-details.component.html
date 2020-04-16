@@ -1,5 +1,5 @@
-<div class="page-header page-header-xs" data-parallax="true" style="background-image: url('./assets/img/fabio-mangione.jpg');">
-    <div class="filter"></div>
+<div class="page-header page-header-xs" data-parallax="true" >
+    <!-- style="background-image: url('./assets/img/fabio-mangione.jpg');" -->
     <div class="container">
         <div class="motto text-center">
             <h3 i18n>News Details</h3>
@@ -7,18 +7,17 @@
     </div>
 </div>
 
-<!-- <pre>{{ news | json }}</pre> -->
-
-
-<!-- {{news.img}}  -->
-
 <div class="main news-details">
-    <div class="section ">
+    <div class="section">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div *ngIf="news">
-                        
+                <div class="col-md-12" *ngIf="news">
+                    <img src="{{news.img}}" class="mx-auto d-block">
+                    <h2 class="text-center">{{news.title}}</h2>
+                    <small class="text-right d-block">{{news.date}}</small>
+                    <p class="space-top text-justify">{{news.description}}</p>
+                    <div class="space-top"></div>
+                    <a [routerLink]="['/news']" class="text-right d-block">GoBack Link</a>
                 </div>
             </div>
         </div>

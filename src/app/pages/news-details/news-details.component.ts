@@ -19,7 +19,7 @@ export class NewsDetailsComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap.subscribe(params=>{
-      this.news = newsMockup[+params.get('news')];  
+      this.news = newsMockup[+params.get('newsId')];  
     });
   }
 }
