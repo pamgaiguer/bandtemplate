@@ -3,15 +3,15 @@ import { ActivatedRoute } from '@angular/router';
 
 import { newsMockup } from '../../news';
 
-
 @Component({
   selector: 'app-news-details',
   templateUrl: './news-details.component.html',
   styleUrls: ['./news-details.component.scss']
 })
 export class NewsDetailsComponent implements OnInit {
+
+  news: any={newsMockup};
   
-  news;
 
   constructor(
     private route: ActivatedRoute,
@@ -19,8 +19,7 @@ export class NewsDetailsComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap.subscribe(params=>{
-      this.news = newsMockup[+params.get('productId')];  
+      this.news = newsMockup[+params.get('news')];  
     });
   }
-
 }
