@@ -10,6 +10,11 @@ import { SignupComponent } from './signup/signup.component';
 import { NewsComponent } from './news/news.component';
 import { NewsDetailsComponent } from './news-details/news-details.component';
 import { DiscographyComponent } from './discography/discography.component';
+import { AboutComponent } from './about/about.component';
+import { TourComponent } from './tour/tour.component';
+import { StoreComponent } from './store/store.component';
+import { MediaComponent } from './media/media.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
     imports: [
@@ -24,7 +29,12 @@ import { DiscographyComponent } from './discography/discography.component';
         ProfileComponent,
         NewsComponent,
         NewsDetailsComponent,
-        DiscographyComponent
+        DiscographyComponent,
+        AboutComponent,
+        TourComponent,
+        StoreComponent,
+        MediaComponent,
+        ContactComponent
     ]
 })
 export class PagesModule { }

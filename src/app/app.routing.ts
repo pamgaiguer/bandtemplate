@@ -11,7 +11,11 @@ import { HomeComponent } from './pages/home/home.component';
 import { NewsComponent } from './pages/news/news.component';
 import { NewsDetailsComponent } from './pages/news-details/news-details.component';
 import { DiscographyComponent } from './pages/discography/discography.component';
-
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { MediaComponent } from './pages/media/media.component';
+import { StoreComponent } from './pages/store/store.component';
+import { TourComponent } from './pages/tour/tour.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -23,7 +27,12 @@ const routes: Routes =[
     { path: 'news',          component: NewsComponent },
     { path: 'news/:newsId',          component: NewsDetailsComponent },
     { path: 'discography',          component: DiscographyComponent },
+    { path: 'about',          component: AboutComponent },
 
+    { path: 'contact',          component: ContactComponent },
+    { path: 'media',          component: MediaComponent },
+    { path: 'store',          component: StoreComponent },
+    { path: 'tour',          component: TourComponent },
 ];
 
 @NgModule({
