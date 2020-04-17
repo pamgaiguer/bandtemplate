@@ -3,23 +3,23 @@
     .album-cover{
         width: 150px;
         border:1px solid #CCC;
-    }  
+        box-shadow: 5px 5px 10px #CCC;
 
-
-    .media{
-        border-bottom:1px solid #ccc;
-        margin: 15px 0;
-        padding-bottom: 15px;
     }
-    
-    .media-body{
-        border:1px solid #f0f;
-        margin-left: 15px;
 
-        ol{
-            padding-inline-start: 30px;
-        }
-
-
+    .tracklist{
+        // border:1px solid #f0f;
+        padding-inline-start: 15px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .discography {
+        .section{
+            // background-color: lightblue;
+            .album-cover, .album-name{
+                text-align: center;
+            }
+        }
+    }
+  }
