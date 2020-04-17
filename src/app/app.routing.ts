@@ -10,6 +10,7 @@ import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.compo
 import { HomeComponent } from './pages/home/home.component';
 import { NewsComponent } from './pages/news/news.component';
 import { NewsDetailsComponent } from './pages/news-details/news-details.component';
+import { DiscographyComponent } from './pages/discography/discography.component';
 
 
 const routes: Routes =[
@@ -21,6 +22,8 @@ const routes: Routes =[
     { path: 'home',          component: HomeComponent },
     { path: 'news',          component: NewsComponent },
     { path: 'news/:newsId',          component: NewsDetailsComponent },
+    { path: 'discography',          component: DiscographyComponent },
+
 ];
 
 @NgModule({

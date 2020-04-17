@@ -9,6 +9,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
 import { NewsComponent } from './news/news.component';
 import { NewsDetailsComponent } from './news-details/news-details.component';
+import { DiscographyComponent } from './discography/discography.component';
 
 @NgModule({
     imports: [
@@ -22,7 +23,8 @@ import { NewsDetailsComponent } from './news-details/news-details.component';
         SignupComponent,
         ProfileComponent,
         NewsComponent,
-        NewsDetailsComponent
+        NewsDetailsComponent,
+        DiscographyComponent
     ]
 })
 export class PagesModule { }

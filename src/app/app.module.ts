@@ -5,9 +5,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 
-import { registerLocaleData } from '@angular/common';
-import localePt from '@angular/common/locales/pt';
-import localeEn from '@angular/common/locales/En';
+// import { registerLocaleData } from '@angular/common';
+// import localePt from '@angular/common/locales/pt';
+// import localeEn from '@angular/common/locales/En';
 
 import { DotdotdotPipe } from './pipes/dotdotdot.pipe';
 
@@ -22,8 +22,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
 // internationalization
-registerLocaleData(localePt);
-registerLocaleData(localeEn);
+// registerLocaleData(localePt);
+// registerLocaleData(localeEn);
 
 @NgModule({
   declarations: [
@@ -40,11 +40,10 @@ registerLocaleData(localeEn);
     ComponentsModule,
     PagesModule,
     AppRoutingModule,
-    
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   exports: [DotdotdotPipe],
-  providers: [],
+  providers: [DotdotdotPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
