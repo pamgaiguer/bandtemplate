@@ -16,7 +16,7 @@ import { DiscographyComponent } from './pages/discography/discography.component'
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'components',             component: ComponentsComponent },
-    { path: 'user-profile',     component: ProfileComponent },
+    { path: 'profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent },
     { path: 'home',          component: HomeComponent },
