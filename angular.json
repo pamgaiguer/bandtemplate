@@ -27,7 +27,7 @@
               "src/assets/sass/paper-kit.scss",
               "src/assets/css/demo.css",
               "src/assets/css/nucleo-icons.css",
-              "src/styles.scss"
+              "src/assets/sass/custom.scss"
             ],
             "scripts": []
           },
