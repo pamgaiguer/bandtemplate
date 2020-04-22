@@ -11,8 +11,10 @@ import { DiscographyMockup } from '../../API';
 export class DiscographyDetailsComponent implements OnInit {
   
   discod;
+  activatedRoute;
 
   alldisco = DiscographyMockup;
+  name: any;
   
   constructor(
     private route: ActivatedRoute,
@@ -22,8 +24,8 @@ export class DiscographyDetailsComponent implements OnInit {
     ngOnInit(): void {
       this.route.paramMap.subscribe(params=>{
         this.discod = DiscographyMockup[+params.get('discographyId')];  
+        // console.log(this.discod);
       });
-      
     }
   }
   

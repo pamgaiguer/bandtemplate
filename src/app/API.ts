@@ -51,59 +51,60 @@ export const DiscographyMockup = [
         "coversmall":"https://www.metal-archives.com/images/1/9/3/0/193087.jpg",
         "coverbig":"https://www.metal-archives.com/images/1/9/3/0/193087.jpg",
         "tracks":[
-            [   "1",
-                "Birth",
-                "01:24",
-                "Instrumental"
-            ],
-            [
-                "2",
-                "A Paradox of Self Destruction",
-                "11:02",
-                "lyrics"
-            ],
-            [
-                "3",
-                "Life",
-                "07:24",
-                "lyrics"
-            ],
-            [
-                "4",
-                "The Meeting",
-                "08:03",
-                "lyrics"
-            ],
-            [
-                "5",
-                "The Longest Day Pt. I - Sorrow",
-                "03:14",
-                "Instrumental"
-            ],
-            [
-                "6",
-                "The Longest Day Pt. II - Sounds in the Void",
-                "01:07",
-                "lyrics"
-            ],
-            [
-                "7",
-                "The Longest Day Pt. III - Falling Skies",
-                "06:28",
-                "lyrics"
-            ],
-            [
-                "8",
-                "The Longest Day Pt. IV - Depression",
-                "06:56",
-                "lyrics"
-            ],
-            [
-                "9",
-                "The Secret of Your Power",
-                "08:53",
-                "lyrics"
-            ],
+            {
+                tracknumber: 1,
+                trackname: "Birth",
+                tracklength: "01:24",
+                tracklyrics: "Instrumental"
+            },  
+            {
+                tracknumber: 2,
+                trackname: "A Paradox of Self Destruction",
+                tracklength: "11:02",
+                tracklyrics: "lyrics"
+            },  
+            {
+                tracknumber: 3,
+                trackname: "Life",
+                tracklength: "07:24",
+                tracklyrics: "lyrics"
+            },  
+            {
+                tracknumber: 4,
+                trackname: "The Meeting",
+                tracklength: "08:03",
+                tracklyrics: "lyrics"
+            },
+            {
+                tracknumber: 5,
+                trackname: "The Longest Day Pt. I - Sorrow",
+                tracklength: "03:14",
+                tracklyrics: "Instrumental"
+            },
+            {
+                tracknumber: 6,
+                trackname: "The Longest Day Pt. II - Sounds in the Void",
+                tracklength: "01:07",
+                tracklyrics: "lyrics"
+            },
+            {
+                tracknumber: 7,
+                trackname: "The Longest Day Pt. III - Falling Skies",
+                tracklength: "06:28",
+                tracklyrics: "lyrics"
+            },
+            {
+                tracknumber: 8,
+                trackname: "The Longest Day Pt. IV - Depression",
+                tracklength: "06:56",
+                tracklyrics: "lyrics"
+            },
+            {
+                tracknumber: 9,
+                trackname: "The Secret of Your Power",
+                tracklength: "08:53",
+                tracklyrics: "lyrics"
+            },
         ],
         lineup:[
             {
@@ -114,7 +115,6 @@ export const DiscographyMockup = [
                 keyboards: "Hugo Bertolaccini",
                 drums: "Caio Teixeira"
         }
-
         ],
         totaltime: "54:31",
         label: "Victor",
@@ -126,61 +126,72 @@ export const DiscographyMockup = [
         "coversmall":"https://www.metal-archives.com/images/2/4/8/6/248679.jpg",
         "coverbig":"https://www.metal-archives.com/images/2/4/8/6/248679.jpg",
         "tracks":[
-            [   "1",
-                "O.M.T",
-                "06:59",
-                "Lyrics"
-            ],
-            [   "2",
-                "6000",
-                "08:16",
-                "Lyrics"
-            ],
-            [   "3",
-                "Bunkers & Bankers",
-                "08:06",
-                "Lyrics"
-            ],
-            [   "4",
-                "Reflected",
-                "05:55",
-                "Lyrics"
-            ],
-            [   "5",
-                "All Rights Removed",
-                "05:51",
-                "Lyrics"
-            ],
-            [   "6",
-                "Transcendence Inc.",
-                "06:01",
-                "Lyrics"
-            ],
-            [   "7",
-                "...",
-                "01:30",
-                "Instrumental"
-            ],
-            [   "8",
-                "This Grace",
-                "09:27",
-                "Lyrics"
-            ],
-            [   "9",
-                "Losing Track of Time",
-                "06:27",
-                "Lyrics"
-            ],
-            [   "10",
-                "Down to the Apex",
-                "04:49",
-                "Lyrics"
-            ],
-            [   "11",
-                "Lead... Off",
-                "08:27",
-                "Lyrics"
-            ],            
+            {
+                tracknumber: 1,
+                trackname: "O.M.T.",
+                tracklength: "06:59",
+                tracklyrics: "Lyrics"
+            },  
+            {
+                tracknumber: 2,
+                trackname: "6000",
+                tracklength: "08:16",
+                tracklyrics: "Lyrics"
+            },
+            {
+                tracknumber: 3,
+                trackname: "Bunkers & Bankers",
+                tracklength: "08:06",
+                tracklyrics: "Lyrics"
+            },
+            {
+                tracknumber: 4,
+                trackname: "Reflected",
+                tracklength: "05:55",
+                tracklyrics: "Lyrics"
+            },
+            {
+                tracknumber: 5,
+                trackname: "All Rights Removed",
+                tracklength: "05:51",
+                tracklyrics: "Lyrics"
+            },
+            {
+                tracknumber: 6,
+                trackname: "Transcendence Inc.",
+                tracklength: "06:01",
+                tracklyrics: "Lyrics"
+            },
+            {
+                tracknumber: 7,
+                trackname: "...",
+                tracklength: "01:30",
+                tracklyrics: "Instrumental"
+            },
+            {
+                tracknumber: 8,
+                trackname: "This Grace",
+                tracklength: "09:27",
+                tracklyrics: "Lyrics"
+            },
+            {
+                tracknumber: 9,
+                trackname: "Losing Track of Time",
+                tracklength: "06:27",
+                tracklyrics: "Lyrics"
+            },
+            {
+                tracknumber: 10,
+                trackname: "Down to the Apex",
+                tracklength: "04:49",
+                tracklyrics: "Lyrics"
+            },
+            {
+                tracknumber: 11,
+                trackname: "Lead... Off",
+                tracklength: "08:27",
+                tracklyrics: "Lyrics"
+            },
         ],
         lineup:[
             {
