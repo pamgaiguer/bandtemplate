@@ -26,20 +26,19 @@
                 <div class="col-md-3 col-xs-12">
                     <h5 class="album-name">{{discod.albumname}} | {{discod.releasedyear}}</h5>
 
-<pre>{{ discod.tracks[0] | json }}</pre>
+<pre>{{discod.tracks | json}}</pre>
 
-                    <ul class="list-unstyled" *ngFor="let track of discod">
-                        <li>{{track.tracks[0].tracknumber}}</li>
-                        <li>{{track.tracks[0].trackname}}</li>
-                        <li>{{track.tracks[0].tracklength}}</li>
-                        <li>{{track.tracks[0].tracklyrics}}</li>
+                    <ul class="list-unstyled">
+                        <li *ngFor="let track of discod.tracks; let i = index">
+                            {{track.tracks[i].tracknumber}}: {{track.tracks[i].trackname}} ({{track.tracks[i].tracklength}})
+                        </li>
 
                     </ul>
                 </div>
                 <div class="col-md-7 col-xs-12">
                     <h5>Info</h5>
                     <ul class="list-unstyled">
-                        <li>Total Track Time: {{discod.totaltime}}</li>
+                        <li>Track Time: {{discod.totaltime}}</li>
                         <li>Label: {{discod.label}}</li>
                         <li>Type: {{discod.type}}</li>
                     </ul>
