@@ -13,6 +13,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12" *ngIf="news">
+                    <a [routerLink]="['/news']" class="text-right d-block">GoBack Link</a>
+
                     <img src="{{news.img}}" class="mx-auto d-block">
                     <h2 class="text-center">{{news.title}}</h2>
                     <small class="text-right d-block">{{news.date}}</small>
