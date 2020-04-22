@@ -28,7 +28,7 @@ const routes: Routes =[
     { path: 'news',                                 component: NewsComponent },
     { path: 'news/:newsId',                         component: NewsDetailsComponent },
     { path: 'discography',                          component: DiscographyComponent },
-    { path: 'discography/:discographyId',         component: DiscographyComponent },
+    { path: 'discography/:discographyId',         component: DiscographyDetailsComponent },
     { path: 'about',                                component: AboutComponent },
     { path: 'contact',          component: ContactComponent },
     { path: 'media',          component: MediaComponent },

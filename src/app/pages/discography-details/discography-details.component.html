@@ -1,40 +1,42 @@
 <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('./assets/img/ilya-yakover.jpg');">
     <div class="filter"></div>
     <div class="container">
-        <div class="motto text-center">
-            <h3>Discography Details (nome do album vem aqui )</h3>
+        <div class="motto text-center" *ngIf="discod">
+            <h3> {{discod.albumname}}</h3>
         </div>
     </div>
 </div>
 
 <div class="main discography-details">
-    <div class="section section-gray">
+    <div class="section section-gray" *ngIf="discod">
         <div class="container">
             <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <a [routerLink]="['/discography']" class="text-right d-block">GoBack Link</a>
+
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-md-2 col-xs-12">
+
                     <figure>
-                        <img src="./assets/img/angular2-logo-trim.png" class="album-cover mx-auto d-block">
+                        <img src="{{discod.coverbig}}" class="album-cover mx-auto d-block">
                     </figure>
                 </div>
                 <div class="col-md-3 col-xs-12">
-                    <h5 class="album-name">Album Title (2020)</h5>
-                    <ol class="tracklist">
-                        <li>Track 1</li>
-                        <li>Track 2</li>
-                        <li>Track 3</li>
-                        <li>Track 4</li>
-                        <li>Track 5</li>
-                        <li>Track 6</li>
-                        <li>Track 7</li>
-                        <li>Track 8</li>
-                        <li>Track 9</li>
-                        <li>Track 10</li>
-                        <li>Track 11</li>
-                        <li>Track 12</li>
-                    </ol>
+                    <h5 class="album-name">{{discod.albumname}} | {{discod.releasedyear}}</h5>
+                    <ul class="list-unstyled" *ngFor="let track of alldisco; let i = index">
+                        <li>{{track.tracks[0]}}</li>
+
+                    </ul>
                 </div>
                 <div class="col-md-7 col-xs-12">
-                    <h5>Line Up / Curiosities about the album and more infos</h5>
+                    <h5>Info</h5>
+                    <ul class="list-unstyled">
+                        <li>Total Track Time: {{discod.totaltime}}</li>
+                        <li>Label: {{discod.label}}</li>
+                        <li>Type: {{discod.type}}</li>
+                    </ul>
                     <ul class="">
                         <li>lorem ipsum</li>
                         <li>lorem ipsum</li>

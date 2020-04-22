@@ -11,7 +11,6 @@ import { newsMockup } from '../../API';
 export class NewsDetailsComponent implements OnInit {
 
   news: any={newsMockup};
-  
 
   constructor(
     private route: ActivatedRoute,
