@@ -2,5 +2,18 @@
     .about-image{
         margin-right: 15px;
         margin-bottom: 15px;
+        width: 50vw;
+    }
+    .about-title{
+        margin: 0;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    .about-description{
+        text-align: justify;
+
+        .about-nameband{
+            font-weight: 700;
+        }
     }
 }
