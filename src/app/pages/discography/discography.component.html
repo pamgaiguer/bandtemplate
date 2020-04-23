@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 my-1" *ngFor="let disco of discoData; let i = index">
+                <div class="col-xs-12 col-md-3 my-1" *ngFor="let disco of discoData; let i = index">
                     <a [routerLink]="['/discography/',i]">
                         <figure class="figure">
                             <img src="{{disco.coversmall}}" class="figure-img img-fluid">

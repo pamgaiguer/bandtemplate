@@ -6,3 +6,15 @@
         }
     }
 }
+
+
+@media only screen and (max-width: 600px) {
+    .discography {
+        .figure{
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           text-align: center;
+        }
+    }
+}
