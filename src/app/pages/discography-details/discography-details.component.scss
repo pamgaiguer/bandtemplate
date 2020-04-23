@@ -1,26 +1,25 @@
 .discography-details{
-
     .album-cover{
         width: 150px;
-        border:1px solid #CCC;
     }
-
     .tracklist{
-        // border:1px solid #f0f;
         padding-inline-start: 15px;
     }
-    .albuminfo{
+    .album-info ul li span{
         font-weight: 600;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .discography {
-        .section{
-            // background-color: lightblue;
-            .album-cover, .album-name{
-                text-align: center;
-            }
+    .discography-details {
+        .album-cover{
+            width: 255px;
+        }
+        .tracklist{
+            padding-inline-start: 15px;
+        }
+        .album-name, .album-tracks, .album-info{
+            text-align: center;
         }
     }
 }
