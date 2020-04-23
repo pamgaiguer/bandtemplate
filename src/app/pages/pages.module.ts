@@ -15,6 +15,7 @@ import { TourComponent } from './tour/tour.component';
 import { StoreComponent } from './store/store.component';
 import { MediaComponent } from './media/media.component';
 import { ContactComponent } from './contact/contact.component';
+import { DiscographyDetailsComponent } from './discography-details/discography-details.component';
 
 @NgModule({
     imports: [
@@ -34,7 +35,8 @@ import { ContactComponent } from './contact/contact.component';
         TourComponent,
         StoreComponent,
         MediaComponent,
-        ContactComponent
+        ContactComponent,
+        DiscographyDetailsComponent
     ]
 })
 export class PagesModule { }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { newsMockup } from '../../news';
+import { newsMockup } from '../../API';
 // import { DotdotdotPipe } from '../..//pipes/dotdotdot.pipe'
 
 

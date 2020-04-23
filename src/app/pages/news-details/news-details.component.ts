@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { newsMockup } from '../../news';
+import { newsMockup } from '../../API';
 
 @Component({
   selector: 'app-news-details',
@@ -11,7 +11,6 @@ import { newsMockup } from '../../news';
 export class NewsDetailsComponent implements OnInit {
 
   news: any={newsMockup};
-  
 
   constructor(
     private route: ActivatedRoute,

@@ -1,0 +1,52 @@
+<div class="page-header page-header-xs" data-parallax="true" style="background-image: url('./assets/img/ilya-yakover.jpg');">
+    <div class="filter"></div>
+    <div class="container">
+        <div class="motto text-center">
+            <h3> {{discod.albumname}}</h3>
+        </div>
+    </div>
+</div>
+
+<div class="main discography-details">
+    <div class="section section-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <a [routerLink]="['/discography']" class="text-right d-block">GoBack Link</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-xs-12">
+                    <figure>
+                        <img src="{{discod.coverbig}}" class="album-cover mx-auto d-block">
+                    </figure>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <h5 class="album-name">{{discod.albumname}} | {{discod.releasedyear}}</h5>
+                    <ul class="list-unstyled" *ngIf="discod.tracks">
+                        <li *ngFor="let t of discod.tracks;">
+                            {{t.tracknumber}}: {{t.trackname}} ({{t.tracklength}})
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <h5>Info</h5>
+                    <ul class="list-unstyled">
+                        <li><span class="albuminfo">Track Time:</span> {{discod.totaltime}}</li>
+                        <li><span class="albuminfo">Label:</span> {{discod.label}}</li>
+                        <li><span class="albuminfo">Type:</span> {{discod.type}}</li>
+                    </ul>
+                    <ul class="list-unstyled" *ngFor="let members of discod.lineup; let i = index">
+                        <li><span class="albuminfo">Vocals:</span> {{discod.lineup[i].vocals}} </li>
+                        <li><span class="albuminfo">Guitars:</span> {{discod.lineup[i].guitars1}}</li>
+                        <li><span class="albuminfo">Guitars:</span> {{discod.lineup[i].guitars2}}</li>
+                        <li><span class="albuminfo">Bass:</span> {{discod.lineup[i].bass}}</li>
+                        <li><span class="albuminfo">Keyboards:</span> {{discod.lineup[i].keyboards}}</li>
+                        <li><span class="albuminfo">Drums:</span> {{discod.lineup[i].drums}}</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>
