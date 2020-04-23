@@ -1,13 +1,16 @@
 .news{
     .card{
+        border-radius: 0;
         height: 50vh;
-
+        
         &:hover{
             cursor: pointer;
         }
     }
     .card-img-top{
         height: 25vh;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
     }
     .card-title{
         font-weight: 700;

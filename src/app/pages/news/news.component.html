@@ -1,21 +1,18 @@
-<div class="page-header page-header-xs" data-parallax="true" style="background-image: url('./assets/img/bruno-abatti.jpg');" >
-    <div class="filter"></div>
-    <div class="container">
-        <div class="motto text-center">
-            <h3 i18n>News</h3>
-        </div>
-    </div>
-</div>
-
-
 <div class="main news">
     <div class="section section-gray">
         <div class="container">
             <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <div class="main-header text-center">
+                        <h3 i18n>News</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-md-4 my-1" *ngFor="let news of allnews; let i = index">
                     <a [routerLink]="['/news',i]">
                         <div class="card">
-                            <img class="card-img-top" src="{{news.img}}" alt="Card image cap">
+                            <img class="card-img-top" src="{{news.img}}">
                             <div class="card-body">
                                 <h5 class="card-title">{{news.title}}</h5>
                                 <p class="card-text">{{ (news.description.length > 50) ? (news.description | slice:0:50) + '...' : news.description }}</p>

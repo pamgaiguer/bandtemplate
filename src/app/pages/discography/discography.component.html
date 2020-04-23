@@ -1,18 +1,15 @@
-<div class="page-header page-header-xs" data-parallax="true" style="background-image: url('./assets/img/ilya-yakover.jpg');">
-    <div class="filter"></div>
-    <div class="container">
-        <div class="motto text-center">
-            <h3 i18n>Discography</h3>
-        </div>
-    </div>
-</div>
-
 <!-- API: puxar capa do disco, titulo, ano, faixas -->
 <!-- curiosidades do album seria legal vir dinamicamente do back end -->
-
 <div class="main discography">
     <div class="section section-gray">
         <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <div class="main-header text-center">
+                        <h3 i18n>Discography</h3>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-3 my-1" *ngFor="let disco of discoData; let i = index">
                     <a [routerLink]="['/discography/',i]">

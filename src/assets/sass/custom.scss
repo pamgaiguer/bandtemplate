@@ -1,11 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
-
 //big fixes of the template
-
 button{
-
     &:focus{
         outline: none;
         outline: none;
+    }
+}
+
+.main-header{
+    margin-bottom: 30px;
+    padding: 25px 0;
+    
+    h3{
+        letter-spacing: +2px;
+        font-weight: 700;
+        font-size: 64px;
+        text-transform: uppercase;
     }
 }
