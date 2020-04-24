@@ -1,13 +1,36 @@
-<div class="main aboutus">
+<div class="main contact">
     <div class="section section-gray">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-12">
                     <div class="main-header text-center">
-                        <h3 i18n>Contact</h3>
+                        <h3 i18n>Shoot us a message!</h3>
                     </div>
                 </div>
             </div>
+            <form class="form-contact">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <label>Name</label>
+                        <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="nc-icon nc-single-02"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Name" (focus)="focus=true" (blur)="focus=false" >
+                        </div>
+                        <label>Email</label>
+                        <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">  <i class="nc-icon nc-email-85"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Email" (focus)="focus1=true" (blur)="focus1=false" >
+                        </div>
+                        <label>Message</label>
+                        <textarea class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..."></textarea>
+                        <button class="btn btn-danger btn-lg btn-fill float-lg-right">Send Message</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </div>
