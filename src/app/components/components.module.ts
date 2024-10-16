@@ -34,7 +34,6 @@ import { NgbdModalContent } from './modal/modal.component';
         NgbdModalComponent,
         NgbdModalContent,
     ],
-    entryComponents: [NgbdModalContent],
-    exports:[ ComponentsComponent ]
+    exports: [ComponentsComponent]
 })
 export class ComponentsModule { }
