@@ -69,21 +69,21 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "bandtemplate:build"
+            "buildTarget": "bandtemplate:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "bandtemplate:build:production"
+              "buildTarget": "bandtemplate:build:production"
             },
-            "pt":{
-              "browserTarget": "bandtemplate:build:pt"
+            "pt": {
+              "buildTarget": "bandtemplate:build:pt"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "bandtemplate:build"
+            "buildTarget": "bandtemplate:build"
           }
         },
         "test": {
