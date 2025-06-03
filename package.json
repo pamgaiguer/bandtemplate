@@ -23,7 +23,7 @@
     "@angular/router": "18.2.13",
     "@angular/service-worker": "18.2.13",
     "@ng-bootstrap/ng-bootstrap": "^17.0.1",
-    "bootstrap": "4.6.2",
+    "bootstrap": "5.0.0",
     "core-js": "^3.38.1",
     "holderjs": "^2.9.7",
     "intl": "^1.2.5",
